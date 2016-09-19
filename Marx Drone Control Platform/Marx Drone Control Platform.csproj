@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FCCAAC69-0F5E-4F49-A6C1-2CF4DAB3DD19}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Marx_Drone_Control_Platform</RootNamespace>
+    <AssemblyName>Marx Drone Control Platform</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AR.Drone.Client">
+      <HintPath>IDrone\ARDrone2\Lib\AR.Drone.Client\bin\Release\AR.Drone.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="AR.Drone.Data">
+      <HintPath>IDrone\ARDrone2\Lib\AR.Drone.Data\bin\Release\AR.Drone.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="AR.Drone.Infrastructure">
+      <HintPath>IDrone\ARDrone2\Lib\AR.Drone.Infrastructure\bin\Release\AR.Drone.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="AR.Drone.Media">
+      <HintPath>IDrone\ARDrone2\Lib\AR.Drone.Media\bin\Release\AR.Drone.Media.dll</HintPath>
+    </Reference>
+    <Reference Include="AR.Drone.Video">
+      <HintPath>IDrone\ARDrone2\Lib\AR.Drone.Video\bin\Release\AR.Drone.Video.dll</HintPath>
+    </Reference>
+    <Reference Include="BSE.Windows.Forms">
+      <HintPath>..\..\..\..\..\Desktop\gmap\BSE.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="FFmpeg.AutoGen">
+      <HintPath>IDrone\ARDrone2\Lib\FFmpeg.AutoGen\FFmpeg.AutoGen\bin\Release\FFmpeg.AutoGen.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.Core">
+      <HintPath>..\..\..\..\..\Desktop\gmap\GMap.NET.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="GMap.NET.WindowsForms">
+      <HintPath>..\..\..\..\..\Desktop\gmap\GMap.NET.WindowsForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Simple_HUD">
+      <HintPath>SimpleHUD\Simple_HUD.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IDrone\ARDrone2\ARDrone2.cs" />
+    <Compile Include="Instruments\AirSpeedIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Instruments\AltimeterInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Instruments\AttitudeIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Instruments\AvionicsInstrumentsControlsRessources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AvionicsInstrumentsControlsRessources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Instruments\HeadingIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Instruments\InstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Instruments\TurnCoordinatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Instruments\VerticalSpeedIndicatorInstrumentControl.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Instruments\AvionicsInstrumentsControlsRessources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>AvionicsInstrumentsControlsRessources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirSpeedIndicator_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AirSpeedNeedle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Altimeter_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bandeau_Dérouleur.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeadingIndicator_Aircraft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeadingIndicator_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HeadingWeel.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Horizon_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Horizon_GroundSky.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Indicator_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LongNeedleAltimeter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Maquette_Avion.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SmallNeedleAltimeter.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurnCoordinator_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurnCoordinatorAircraft.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurnCoordinatorBall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TurnCoordinatorMarks.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VerticalSpeedIndicator_Background.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\VerticalSpeedNeedle.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Marx Drone Control Platform.sln" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="IDrone\ARDrone2\Lib\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

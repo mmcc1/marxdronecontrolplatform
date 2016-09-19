@@ -1,0 +1,85 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Marx Drone Control Platform", "Marx Drone Control Platform\Marx Drone Control Platform.csproj", "{FCCAAC69-0F5E-4F49-A6C1-2CF4DAB3DD19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR.Drone.Client", "Marx Drone Control Platform\IDrone\ARDrone2\Lib\AR.Drone.Client\AR.Drone.Client.csproj", "{56DBF8E3-28A6-4C27-BA0A-B32352608F44}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR.Drone.Data", "Marx Drone Control Platform\IDrone\ARDrone2\Lib\AR.Drone.Data\AR.Drone.Data.csproj", "{7D1B0B10-82F9-413F-BEE9-0174753D93A1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR.Drone.Infrastructure", "Marx Drone Control Platform\IDrone\ARDrone2\Lib\AR.Drone.Infrastructure\AR.Drone.Infrastructure.csproj", "{5BE68B3D-1112-464D-8C17-844E834BB3BA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR.Drone.Media", "Marx Drone Control Platform\IDrone\ARDrone2\Lib\AR.Drone.Media\AR.Drone.Media.csproj", "{DD02DB21-14CF-4E03-BEE2-AFB2B1C49A4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AR.Drone.Video", "Marx Drone Control Platform\IDrone\ARDrone2\Lib\AR.Drone.Video\AR.Drone.Video.csproj", "{36C63293-4C2D-41EC-B231-FAF55845C014}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FFmpeg.AutoGen", "Marx Drone Control Platform\IDrone\ARDrone2\Lib\FFmpeg.AutoGen\FFmpeg.AutoGen\FFmpeg.AutoGen.csproj", "{A536B02A-B0B1-4753-8328-17369EF09976}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 8
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://marxbitware.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Marx\u0020Drone\u0020Control\u0020Platform\\IDrone\\ARDrone2\\Lib\\AR.Drone.Client\\AR.Drone.Client.csproj
+		SccProjectName1 = Marx\u0020Drone\u0020Control\u0020Platform/IDrone/ARDrone2/Lib/AR.Drone.Client
+		SccLocalPath1 = Marx\u0020Drone\u0020Control\u0020Platform\\IDrone\\ARDrone2\\Lib\\AR.Drone.Client
+		SccProjectUniqueName2 = Marx\u0020Drone\u0020Control\u0020Platform\\IDrone\\ARDrone2\\Lib\\AR.Drone.Data\\AR.Drone.Data.csproj
+		SccProjectName2 = Marx\u0020Drone\u0020Control\u0020Platform/IDrone/ARDrone2/Lib/AR.Drone.Data
+		SccLocalPath2 = Marx\u0020Drone\u0020Control\u0020Platform\\IDrone\\ARDrone2\\Lib\\AR.Drone.Data
+		SccProjectUniqueName3 = Marx\u0020Drone\u0020Control\u0020Platform\\IDrone\\ARDrone2\\Lib\\AR.Drone.Infrastructure\\AR.Drone.Infrastructure.csproj
+		SccProjectName3 = Marx\u0020Drone\u0020Control\u0020Platform/IDrone/ARDrone2/Lib/AR.Drone.Infrastructure
+		SccLocalPath3 = Marx\u0020Drone\u0020Control\u0020Platform\\IDrone\\ARDrone2\\Lib\\AR.Drone.Infrastructure
+		SccProjectUniqueName4 = Marx\u0020Drone\u0020Control\u0020Platform\\IDrone\\ARDrone2\\Lib\\AR.Drone.Media\\AR.Drone.Media.csproj
+		SccProjectName4 = Marx\u0020Drone\u0020Control\u0020Platform/IDrone/ARDrone2/Lib/AR.Drone.Media
+		SccLocalPath4 = Marx\u0020Drone\u0020Control\u0020Platform\\IDrone\\ARDrone2\\Lib\\AR.Drone.Media
+		SccProjectUniqueName5 = Marx\u0020Drone\u0020Control\u0020Platform\\IDrone\\ARDrone2\\Lib\\AR.Drone.Video\\AR.Drone.Video.csproj
+		SccProjectName5 = Marx\u0020Drone\u0020Control\u0020Platform/IDrone/ARDrone2/Lib/AR.Drone.Video
+		SccLocalPath5 = Marx\u0020Drone\u0020Control\u0020Platform\\IDrone\\ARDrone2\\Lib\\AR.Drone.Video
+		SccProjectUniqueName6 = Marx\u0020Drone\u0020Control\u0020Platform\\IDrone\\ARDrone2\\Lib\\FFmpeg.AutoGen\\FFmpeg.AutoGen\\FFmpeg.AutoGen.csproj
+		SccProjectName6 = Marx\u0020Drone\u0020Control\u0020Platform/IDrone/ARDrone2/Lib/FFmpeg.AutoGen/FFmpeg.AutoGen
+		SccLocalPath6 = Marx\u0020Drone\u0020Control\u0020Platform\\IDrone\\ARDrone2\\Lib\\FFmpeg.AutoGen\\FFmpeg.AutoGen
+		SccProjectUniqueName7 = Marx\u0020Drone\u0020Control\u0020Platform\\Marx\u0020Drone\u0020Control\u0020Platform.csproj
+		SccProjectName7 = Marx\u0020Drone\u0020Control\u0020Platform
+		SccLocalPath7 = Marx\u0020Drone\u0020Control\u0020Platform
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FCCAAC69-0F5E-4F49-A6C1-2CF4DAB3DD19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FCCAAC69-0F5E-4F49-A6C1-2CF4DAB3DD19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FCCAAC69-0F5E-4F49-A6C1-2CF4DAB3DD19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FCCAAC69-0F5E-4F49-A6C1-2CF4DAB3DD19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DBF8E3-28A6-4C27-BA0A-B32352608F44}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DBF8E3-28A6-4C27-BA0A-B32352608F44}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DBF8E3-28A6-4C27-BA0A-B32352608F44}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DBF8E3-28A6-4C27-BA0A-B32352608F44}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D1B0B10-82F9-413F-BEE9-0174753D93A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D1B0B10-82F9-413F-BEE9-0174753D93A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D1B0B10-82F9-413F-BEE9-0174753D93A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D1B0B10-82F9-413F-BEE9-0174753D93A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BE68B3D-1112-464D-8C17-844E834BB3BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BE68B3D-1112-464D-8C17-844E834BB3BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BE68B3D-1112-464D-8C17-844E834BB3BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BE68B3D-1112-464D-8C17-844E834BB3BA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD02DB21-14CF-4E03-BEE2-AFB2B1C49A4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD02DB21-14CF-4E03-BEE2-AFB2B1C49A4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD02DB21-14CF-4E03-BEE2-AFB2B1C49A4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD02DB21-14CF-4E03-BEE2-AFB2B1C49A4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36C63293-4C2D-41EC-B231-FAF55845C014}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36C63293-4C2D-41EC-B231-FAF55845C014}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36C63293-4C2D-41EC-B231-FAF55845C014}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36C63293-4C2D-41EC-B231-FAF55845C014}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A536B02A-B0B1-4753-8328-17369EF09976}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A536B02A-B0B1-4753-8328-17369EF09976}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A536B02A-B0B1-4753-8328-17369EF09976}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A536B02A-B0B1-4753-8328-17369EF09976}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
